@@ -4,6 +4,7 @@ const nurseVitalSignsSchema = new mongoose.Schema({
   userId: {
     type: mongoose.Schema.Types.ObjectId,ref: 'User',required: true,
   },
+  patientName:String,
   bodyTemperature: Number,
   heartRate: Number,
   bloodPressure: String, 
